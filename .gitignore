@@ -35,8 +35,10 @@ ENV/
 
 # Project specific
 *.mp4
-*.pdf 
-
-
-# Thumbnails
+*.pdf
 thumbnails/
+dist/
+build/
+*.spec
+app_icon.icns
+app_icon.iconset/
