@@ -53,12 +53,10 @@ def main():
     with st.expander("Instructions"):
         st.markdown(
             """
-            1. Drag your folder into Finder/Explorer
-            2. Copy the folder path
-            3. Paste the path into the input field above
-            4. Wait for processing to complete
-            5. Thumbnails will be saved in a 'thumbnails' folder next to your videos
-            6. Preview of combined scenes will appear below each processed video
+            1. Enter the path to a folder containing videos
+            2. Wait for processing to complete
+            3. Thumbnails will be saved in a 'thumbnails' folder next to your videos
+            4. Preview of combined scenes will appear below each processed video
             """
         )
 
