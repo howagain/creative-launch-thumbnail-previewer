@@ -16,45 +16,37 @@ This project is under active development. The core functionality for scene detec
 
 ## Development Setup
 
-1. **Download and Install Homebrew**
-   Open Terminal (press `Cmd + Space`, type "Terminal" and press Enter) and paste this command:
-   ```bash
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   ```
-
-2. **Install Python**
-   In Terminal, run:
-   ```bash
-   brew install python@3.11
-   ```
-
-3. **Install UV Package Manager**
+1. **Install UV Package Manager**
    ```bash
    curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
 
-4. **Clone the Repository**
+2. **Install Python**
+   ```bash
+   uv python install 3.11
+   ```
+
+3. **Clone the Repository**
    ```bash
    git clone https://github.com/howagain/creative-launch-thumbnail-previewer.git
    cd creative-launch-thumbnail-previewer
    ```
 
-5. **Set Up Development Environment**
+4. **Set Up Development Environment**
    ```bash
    uv venv
    source .venv/bin/activate
    uv pip install -e .
    ```
 
-6. **Run the Application**
+5. **Run the Application**
    ```bash
-   streamlit run src/video_scene_thumbs/ui.py
+   streamlit run src/video_scene_thumbs/streamlit_app.py
    ```
 
 ## Requirements
 
-- macOS 10.15 or later
-- Python 3.8 or later
+- Python 3.11 (UV will install this automatically)
 - Dependencies are managed through pyproject.toml:
   - opencv-python
   - numpy
